@@ -1,0 +1,5 @@
+get_prop(untrusted_app, odsign_prop)
+get_prop(untrusted_app, userdebug_or_eng_prop)
+get_prop(untrusted_app, qemu_sf_lcd_density_prop)
+
+allow untrusted_app proc_modules:file {read};
