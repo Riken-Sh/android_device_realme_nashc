@@ -423,8 +423,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf
 
-# Build basic call recorder
-$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/nashc/nashc-vendor.mk)
